@@ -1,0 +1,262 @@
+header {
+    background-image: url('img/banner.jfif'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta real de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Cambia el color del texto si es necesario para que sea legible */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 70px 0; /* Espacio interno superior e inferior */
+    height: 180px;
+}
+
+header h1 {
+    font-size: 70px; /* Tamaño de fuente */
+    font-family: 'Monospace', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(4, 7, 99, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav ul li img{
+    height: 25px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+#logo {
+    background-image: url('Logo.png');
+    background-size: contain; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    text-indent: -9999px; /* Oculta el texto */
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+/* Estilo para las imágenes de los botones que ocupan todo el espacio del botón */
+.producto-img-full {
+    width: 160px; /* Ancho de la imagen al 100% del botón */
+    height: 180px; /* Alto de la imagen al 100% del botón */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
+}
+.producto-img-filled {
+    width: 145px; /* Ancho de la imagen al 100% del botón */
+    height: 245px; /* Alto de la imagen al 100% del botón */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier relleno */
+}
+/* Estilo para los botones de productos */
+.productos-container {
+    text-align: center; /* Centra los botones */
+}
+
+.producto-btn {
+display: inline-block;
+margin: 20px;
+padding: 30px 80px; /* Aumenta el padding para hacer el botón más grande */
+border: none;
+border-radius: 15;
+font-size: 20px; /* Ajusta el tamaño del texto */
+cursor: pointer;
+transition: background-color 0.3s; /* Quita el redondeo para hacerlo cuadrado */
+background: rgb(53, 180, 248);
+background: linear-gradient(0deg, rgb(55, 205, 239) 0%, rgb(111, 185, 235) 100%)
+}
+
+.producto-btn:hover {
+color: rgb(163, 200, 216);
+background: linear-gradient(0deg, rgb(109, 60, 224) 0%, rgb(134, 193, 229) 70%);
+box-shadow:none;
+}
+.producto-btn:before,
+.producto-btn:after{
+content:'';
+position:absolute;
+top:0;
+right:0;
+height:2px;
+width:0;
+background: #f0094a;
+box-shadow:
+-1px -1px 5px 0px #fff,
+7px 7px 20px 0px #0003,
+4px 4px 5px 0px #0002;
+transition:400ms ease all;
+}
+.producto-btn:after{
+right:inherit;
+top:inherit;
+left:0;
+bottom:0;
+}
+.float{
+position: relative;
+}
+.producto-btn:hover:before,
+.producto-btn:hover:after{
+width:100%;
+transition:800ms ease all;
+}
+
+/* Estilo para las imágenes de los botones */
+.producto-img {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el texto del botón */
+    vertical-align: middle; /* Alinea verticalmente la imagen */
+}
+
+/* Estilo para el área de "Conócenos" */
+.conocenos {
+    background-color: #d7f7ff; /* Color de fondo */
+    padding: 50px 20px; /* Espaciado interno */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.conocenos h2, .conocenos h3 {
+    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 800px; /* Establece un ancho máximo para el texto */
+}
+
+.llaveros-barra {
+    background-color: #112453; /* Color de fondo de la barra */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 800px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Estilos para los controles */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    z-index: 2;
+}
+
+.contactanos {
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 50px 20px; /* Espaciado interno */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.contactanos h2, .contactanos h3 {
+    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 300px; /* Establece un ancho máximo para el texto */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+nav a.icon{
+    align-self: flex-end;
+    display: block;
+}
+.topnav.responsive a{
+    display: block;
+}
+.topnav.responsive{
+    position: relative;
+    display: none;
+}
